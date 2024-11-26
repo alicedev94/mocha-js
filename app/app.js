@@ -11,3 +11,5 @@ app.use(cors());
 app.get('/', (req, res) => res.send('All fine[MOCHAJS]'));
 
 app.listen(port, () => console.log('run in port', port));
+
+export default app;
