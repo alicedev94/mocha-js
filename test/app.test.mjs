@@ -2,7 +2,7 @@ import request from 'supertest';
 import { expect } from 'chai';
 import app from '../app/app.js';
 
-describe('GET /', () => {
+describe('GET /', function() { // Cambié a función normal para poder usar `this.timeout`
   this.timeout(5000); 
   
   it('should return "ALL fine[MOCHAJS]"', async () => {
@@ -17,4 +17,3 @@ describe('GET /', () => {
     expect(res.body).to.deep.equal({ name: 'alice', age: 22, profile: "dev" }); 
   });
 });
-
