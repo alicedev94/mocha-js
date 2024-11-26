@@ -2,7 +2,7 @@ import request from 'supertest';
 import { expect } from 'chai';
 import app from '../app/app.js';
 
-describe('GET /', function() { 
+describe('Enpoint API', function() { 
   this.timeout(5000); 
 
   it('should return "ALL fine[MOCHAJS]"', async () => {

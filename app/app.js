@@ -11,9 +11,7 @@ app.use(cors());
 app.get('/', (req, res) => res.send('All fine[MOCHAJS]'));
 
 app.get('/profile', (req, res) => {
-    setTimeout(()=> {
-        res.json({ name: 'alice', profile: 'dev', age: 22});
-    }, 3000);
+  res.json({ name: 'alice', profile: 'dev', age: 22 });
 });
 
 app.listen(port, () => console.log('run in port', port));
