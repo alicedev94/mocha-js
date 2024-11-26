@@ -14,5 +14,10 @@
   "devDependencies": {
     "chai": "^5.1.2",
     "mocha": "^10.8.2"
+  },
+  "dependencies": {
+    "cors": "^2.8.5",
+    "express": "^4.21.1",
+    "prettier": "^3.4.1"
   }
 }
