@@ -5,20 +5,34 @@
   "type": "module",
   "scripts": {
     "dev": "node --watch index.js",
-    "test": "mocha"
+    "test": "mocha",
+    "coverage": "nyc mocha"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "description": "",
   "devDependencies": {
+    "@istanbuljs/nyc-config-babel": "^3.0.0",
+    "babel-plugin-istanbul": "^7.0.0",
     "chai": "^5.1.2",
     "mocha": "^10.8.2",
+    "nyc": "^17.1.0",
     "supertest": "^7.0.0"
   },
   "dependencies": {
     "cors": "^2.8.5",
     "express": "^4.21.1",
     "prettier": "^3.4.1"
+  },
+  "nyc": {
+    "extends": "@istanbuljs/nyc-config-babel",
+    "exclude": [
+      "test/*"
+    ],
+    "reporter": [
+      "html",
+      "text-summary"
+    ]
   }
 }
