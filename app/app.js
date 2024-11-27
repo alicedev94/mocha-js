@@ -30,8 +30,8 @@ app.get('/', (req, res) => res.send('All fine[MOCHAJS]'));
  * /profile:
  *   get:
  *     summary: Retorna el perfil de un usuario
- *   
- *       200:  responses:
+ *     responses:  <!-- Mover 'responses' para que esté correctamente indentado -->
+ *       200:
  *         description: Perfil de usuario
  *         content:
  *           application/json:
