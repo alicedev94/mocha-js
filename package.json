@@ -5,17 +5,12 @@
   "type": "module",
   "scripts": {
     "dev": "node --watch index.js",
-    "test": "mocha"
+    "test": "jest"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "description": "",
-  "devDependencies": {
-    "chai": "^5.1.2",
-    "mocha": "^10.8.2",
-    "supertest": "^7.0.0"
-  },
   "dependencies": {
     "cors": "^2.8.5",
     "express": "^4.21.1",
